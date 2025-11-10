@@ -5,6 +5,18 @@
     src: url(../assets/fonts/Helvetica.ttf) format(otf);
 }
 
+@font-face {
+    font-family: 'Helvetica Ultra';
+    src: url(../assets/fonts/Helvetica-Neue-UltraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Bilmond';
+    src: url(../assets/fonts/bilmond-extrabold.otf);
+}
+
+
 body{
     font-family: 'Helvetica';
+    background-color: #121212;
 }
