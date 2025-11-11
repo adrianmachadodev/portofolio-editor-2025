@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Helvetica';
-    src: url(../assets/fonts/Helvetica.ttf) format(otf);
+    src: url(../public/fonts/Helvetica.ttf) format(otf);
 }
 
 @font-face {
-    font-family: 'Helvetica Ultra';
-    src: url(../assets/fonts/Helvetica-Neue-UltraLight.ttf);
+    font-family: 'Helvetica-Light';
+    src: url(/public/fonts/Helvetica-Neue-UltraLight.otf);
 }
 
 @font-face {
@@ -19,4 +19,5 @@
 body{
     font-family: 'Helvetica';
     background-color: #121212;
+    font-size: 14px;
 }
