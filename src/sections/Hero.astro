@@ -1,20 +1,25 @@
 <section
-  class="bg-[#151515] w-auto h-screen mt-2 flex flex-row justify-center items-center gap-2"
+  class="bg-[#151515] w-auto h-screen mt-2 flex flex-row justify-center items-center gap-2 relative"
 >
-  <div class="flex flex-col w-3xl h-7/12  justify-center items-center">
+  <div
+    class="min-w-full h-screen absolute bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[50px_50px] mask-b-from-50% mask-t-from-50%"
+  >
+  </div>
+
+  <div class="flex flex-col w-3xl h-7/12 justify-center items-center z-10">
     <div class="flex flex-col text-6xl text-white">
-      <h2 class="font-[bilmond]">EDITOR DE VIDEO</h2>
-      <h2 class="font-[bilmond]">EDITOR DE VIDEO</h2>
-      <h2 class="font-[bilmond]">EDITOR DE VIDEO</h2>
+      <h4 class="font-[bilmond]">EDITOR DE VIDEO</h4>
+      <h4 class="font-[bilmond]">EDITOR DE VIDEO</h4>
+      <h4 class="font-[bilmond]">EDITOR DE VIDEO</h4>
     </div>
 
-    <div
-      class="flex bg-neutral-700 text-white w-40 h-10 rounded-2xl text-center flex-row justify-center items-center mt-2 font-[Helvetica-Light]"
+    <a
+      href="#"
+      class="text-white border-white rounded-4xl box-border border hover:bg-neutral-600 hover:transition-all ease-in 2ms shadow-xs font-medium leading-5 text-sm px-4 py-2.5 font-[Helvetica] mt-3"
+      >Ver Proyectos</a
     >
-      <a href="#">Ver Proyectos</a>
-    </div>
   </div>
-  <div class="flex flex-row w-3xl h-auto bg-red-400 justify-center">
+  <div class="flex flex-row w-3xl h-auto bg-red-400 justify-center z-10">
     <picture class="w-3xl h-auto bg-contain bg-red-500">
       <img
         src="/public/images/hero-background.jpg"

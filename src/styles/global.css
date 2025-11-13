@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
+
 
 @font-face {
     font-family: 'Helvetica';
@@ -20,4 +22,17 @@ body{
     font-family: 'Helvetica';
     background-color: #121212;
     font-size: 14px;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-medium;
+  }
 }
