@@ -2,28 +2,34 @@
 import Card from "../components/Card.astro";
 ---
 
-<section class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center">
+<section class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center p-3">
   <div
-    class="w-7xl h-auto bg-red-500 flex flex-col justify-start items-center gap-3"
+    class="w-7xl h-auto  flex flex-col justify-start items-center gap-3 mt-2"
   >
     <!-- Title -->
-    <div class="w-3xl h-10 bg-neutral-400">
+    <div class="w-3xl h-10 text-white font-[Helvetica-light]">
       <h2>Proyectos</h2>
     </div>
     <!-- Content/text -->
-    <div class="w-3xl h-auto bg-red-400">
+    <div class="w-3xl h-auto text-white font-[Helvetica-light]">
       <p class="text-2xl">
         Algunos proyectos realizados mayormente son para redes sociales. También
         para presentar un nuevo proyecto web que he creado.
       </p>
     </div>
     <!-- Projects -->
-    <div class="w-auto h-auto bg-neutral-400 flex flex-col gap-2">
-        <!-- card -->
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
+    <div class="w-6xl h-auto  flex flex-col md:flex-row flex-wrap gap-2 justify-center items-center">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
   </div>
 </section>
+
+<!-- 
+  Proyectos: 
+  - Video presentación de portfolio 2022
+  - Video de promoción nav
+  - Video Presentación Portfolio video editor 2025
+-->
