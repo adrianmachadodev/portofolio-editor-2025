@@ -1,3 +1,29 @@
-<section class="bg-neutral-500 w-full h-screen">
+---
+import Card from "../components/Card.astro";
+---
 
+<section class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center">
+  <div
+    class="w-7xl h-auto bg-red-500 flex flex-col justify-start items-center gap-3"
+  >
+    <!-- Title -->
+    <div class="w-3xl h-10 bg-neutral-400">
+      <h2>Proyectos</h2>
+    </div>
+    <!-- Content/text -->
+    <div class="w-3xl h-auto bg-red-400">
+      <p class="text-2xl">
+        Algunos proyectos realizados mayormente son para redes sociales. También
+        para presentar un nuevo proyecto web que he creado.
+      </p>
+    </div>
+    <!-- Projects -->
+    <div class="w-auto h-auto bg-neutral-400 flex flex-col gap-2">
+        <!-- card -->
+         <Card/>
+         <Card/>
+         <Card/>
+         <Card/>
+    </div>
+  </div>
 </section>
