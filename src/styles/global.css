@@ -1,29 +1,31 @@
 @import "tailwindcss";
 @import "tailwindcss/preflight.css" layer(base);
 
-
 @font-face {
-    font-family: 'Helvetica';
-    src: url(../public/fonts/Helvetica.ttf) format(otf);
-}
-
-@font-face {
-    font-family: 'Helvetica-Light';
-    src: url(/public/fonts/Helvetica-Neue-UltraLight.otf);
+  font-family: "Helvetica";
+  src: url(../public/fonts/Helvetica.ttf) format(otf);
 }
 
 @font-face {
-    font-family: 'Bilmond';
-    src: url(../assets/fonts/bilmond-extrabold.otf);
+  font-family: "Helvetica-Light";
+  src: url(/public/fonts/Helvetica-Neue-UltraLight.otf);
 }
 
-
-body{
-    font-family: 'Helvetica';
-    background-color: #121212;
-    font-size: 14px;
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url(/public/fonts/HelveticaNeueLight.otf);
 }
 
+@font-face {
+  font-family: "Bilmond";
+  src: url(../assets/fonts/bilmond-extrabold.otf);
+}
+
+body {
+  font-family: "Helvetica";
+  background-color: #121212;
+  font-size: 14px;
+}
 
 @layer base {
   h1 {
