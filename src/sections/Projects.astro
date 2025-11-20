@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import { PROJECTS } from "../const/projects";
 ---
 
 <section
@@ -22,10 +23,12 @@ import Card from "../components/Card.astro";
     <div
       class="w-6xl h-auto flex flex-col md:flex-row flex-wrap gap-2 justify-center items-center"
     >
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <!-- CARDS -->
+      {
+        PROJECTS.map((project: any) => (
+          <Card name={project.name} year={project.age} image={project.image} />
+        ))
+      }
     </div>
   </div>
 </section>
