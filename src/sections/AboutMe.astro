@@ -2,16 +2,26 @@
   class="bg-[#151515] w-auto min-h-9/12 mt-2 flex flex-row gap-2 justify-center items-center"
 >
   <!-- section profile image -->
-  <div class="flex flex-row w-3xl h-[500px] justify-center items-center">
-    <picture class="w-72 h-96 flex justify-center rounded-2xl">
+  <div
+    class="flex flex-row w-3xl h-[500px] justify-center items-center relative"
+  >
+    <picture class="w-72 h-96 flex justify-center rounded-2xl group">
       <img
         src="images/linkedin-profile-new.jpg"
-        class="w-full h-96 object-cover"
+        class="w-full h-96 object-cover rounded-sm"
         alt="profile-image"
       />
+      <div
+        class="absolute w-72 h-15 opacity-0 bg-red-500 bottom-15 group-hover:opacity-100"
+      >
+        <small class="font-[Helvetica]"
+          >Adrián machado - Editor de Video para contenido en redes sociales</small
+        >
+      </div>
     </picture>
   </div>
   <!-- about me text -->
+
   <div
     class="flex flex-col gap-2 w-3xl h-[500px] justify-around items-center text-white"
   >
@@ -41,11 +51,20 @@
       <div
         class="flex flex-row w-100 h-20 justify-center items-center gap-2 font-[Helvetica] text-sm"
       >
-        <span class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20">Premiere Pro</span>
+        <span
+          class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20"
+          >Premiere Pro</span
+        >
 
-        <span class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20">After Effects</span>
+        <span
+          class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20"
+          >After Effects</span
+        >
 
-        <span class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20">Photoshop</span>
+        <span
+          class="inline-flex items-center rounded-full bg-gray-400/10 px-2 py-1 text-xs font-medium text-gray-400 inset-ring inset-ring-gray-400/20"
+          >Photoshop</span
+        >
       </div>
     </div>
   </div>
