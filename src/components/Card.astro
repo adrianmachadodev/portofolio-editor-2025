@@ -1,23 +1,33 @@
 ---
 interface Props {
-    name:string,
-    year:number,
-    image:string,
+  name: string;
+  year: number;
+  image: string;
+  type: string;
 }
 
-
-const {name, year, image} = Astro.props;
+const { name, year, image, type } = Astro.props;
 ---
 
-<div class="w-96 h-50 flex  bg-neutral-500 relative group">
-    
-    <picture class="w-full h-50 bg-amber-300">
-        <img src={image} alt="projects-img" class="w-full h-full">
-    </picture>
-    
-    <!-- Text header -->
-    <div class="w-full h-10 bg-white absolute opacity-0 group-hover:opacity-100 transition-all ease-in 1ms top-40">
-        {name}
-    </div>
+<div class="w-auto h-auto flex relative group">
+  <picture class="w-auto h-auto ">
+    {
+      type == "Horizontal" ? (
+        <img src={image} alt="projects-img" class="w-full h-full" />
+      ) : (
+        <img
+          src={image}
+          alt="projects-img"
+          class="w-full max-w-[280px] h-auto aspect-9/16 object-cover rounded-xl items-center"
+        />
+      )
+    }
+  </picture>
 
+  <!-- Text header -->
+  <div
+    class="w-full h-10 bg-red-400 absolute opacity-0 group-hover:opacity-100 transition-all ease-in 1ms bottom-0"
+  >
+    {name}
+  </div>
 </div>
