@@ -1,0 +1,65 @@
+export const ARTICLES = [
+  {
+    icon: ` <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-palette"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+          ></path><path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+          ></path><path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+          ></path><path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+          ></path></svg
+        >`,
+    title: "Edición de Video",
+    description: "Montaje fluido, ritmo visual y narrativa audiovisual.",
+  },
+  {
+    icon: ` <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
+          ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
+        >`,
+    title: "Adaptación para redes",
+    description:
+      "Optimización de contenido audiovisual para formatos sociales.",
+  },
+  {
+    icon: ` <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-bulb"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"
+          ></path><path
+            d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+          ></path><path d="M9.7 17l4.6 0"></path></svg
+        >`,
+    title: "Animación para branding",
+    description: "Creación de identidades visuales animadas para marcas.",
+  },
+];

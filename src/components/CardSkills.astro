@@ -1,0 +1,33 @@
+---
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+}
+---
+
+<div class="w-7xl h-auto flex flex-col justify-start items-center gap-3 mt-2">
+  <div class="w-auto h-10 text-white font-[Helvetica-light]">
+    <h2>Habilidades</h2>
+  </div>
+
+  <!-- Articles -->
+  <div
+    class="w-auto grid grid-cols-1 gap-4 md:grid-cols-3 justify-center items-center flex-wrap font-[Helvetica-Light]"
+  >
+    <article
+      class="w-80 h-50 bg-neutral-800/50 inset-ring inset-ring-gray-400/20 rounded-xl p-5 text-white flex flex-col justify-center"
+    >
+      <div
+        class="w-10 h-10 bg-neutral-400/10 rounded-full flex justify-center items-center inset-ring inset-ring-neutral-600 mb-3"
+      >
+        <!-- TItle card -->
+        <h3 class="mt-2 font-bold mb-3">Edición de Video</h3>
+        <!-- textcard -->
+        <p class="text-sm font-[Helvetica] text-neutral-500">
+          Montaje fluido, ritmo visual y narrativa audiovisual.
+        </p>
+      </div>
+    </article>
+  </div>
+</div>
