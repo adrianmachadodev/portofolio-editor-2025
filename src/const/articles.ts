@@ -37,9 +37,9 @@ export const ARTICLES = [
             d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
           ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
         >`,
-    title: "Adaptación para redes",
+    title: "Contenido para Redes Sociales",
     description:
-      "Optimización de contenido audiovisual para formatos sociales.",
+      "Optimización de contenido audiovisual para formatos sociales. ",
   },
   {
     icon: ` <svg

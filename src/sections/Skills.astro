@@ -4,17 +4,20 @@ import { ARTICLES } from "../const/articles";
 ---
 
 <section
-  class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center"
+  class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center items-center"
 >
-  <div class="w-7xl h-auto flex flex-col justify-start items-center gap-3 mt-2">
-    {
-      ARTICLES.map((res: any) => {
-        <CardSkills
-          icon={res.icon}
-          title={res.title}
-          description={res.description}
-        />;
-      })
-    }
+  <div class="flex flex-col w-5xl h-96">
+    <h1 class="font-[Helvetica-light] text-white">Habilidades</h1>
+    <div class="w-full h-56 grid grid-cols-1 md:grid-cols-3 gap-2 items-center">
+      {
+        ARTICLES.map((res: any) => (
+          <CardSkills
+            icon={res.icon}
+            title={res.title}
+            description={res.description}
+          />
+        ))
+      }
+    </div>
   </div>
 </section>

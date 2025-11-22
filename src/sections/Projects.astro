@@ -2,8 +2,10 @@
 import Card from "../components/Card.astro";
 import { PROJECTS } from "../const/projects";
 
-const horizontalArray = PROJECTS.filter((project:any) => project.type == 'Horizontal');
-const reels = PROJECTS.filter((project:any) => project.type == 'Reel');
+const horizontalArray = PROJECTS.filter(
+  (project: any) => project.type == "Horizontal",
+);
+const reels = PROJECTS.filter((project: any) => project.type == "Reel");
 ---
 
 <section
@@ -22,27 +24,40 @@ const reels = PROJECTS.filter((project:any) => project.type == 'Reel');
         para presentar un nuevo proyecto web que he creado.
       </p>
     </div>
-    
+
     <!-- Projects Horizontal (presentations, etc) -->
-     <h1 class="text-white">Videos Horizontales</h1>
-     <div class="grid grid-col-3 md:grid-flow-col gap-1 w-full justify-center items-center ">
+    <h1 class="text-white font-[Helvetica-Neue]">Videos Horizontales</h1>
+    <div
+      class="grid grid-col-3 md:grid-flow-col gap-1 w-full justify-center items-center"
+    >
       {
-      horizontalArray.map((item:any) => (
-        <Card name={item.name} image={item.image} year={item.year} type={item.type}/>
-      ))
-     }
-     </div>
+        horizontalArray.map((item: any) => (
+          <Card
+            name={item.name}
+            image={item.image}
+            year={item.year}
+            type={item.type}
+          />
+        ))
+      }
+    </div>
 
     <!-- Projects Vertical (reels)-->
-     <h1>Reels</h1>
-     <div class="grid grid-row-3 h-auto md:grid-flow-col gap-1 w-full justify-center items-center">
+    <h1 class="text-white font-[Helvetica-Neue]">Reels</h1>
+    <div
+      class="grid grid-row-3 h-auto md:grid-flow-col gap-1 w-full justify-center items-center"
+    >
       {
-      reels.map((item:any) => (
-        <Card name={item.name} image={item.image} year={item.year} type={item.type}/>
-      ))
-     }
-     </div>
-
+        reels.map((item: any) => (
+          <Card
+            name={item.name}
+            image={item.image}
+            year={item.year}
+            type={item.type}
+          />
+        ))
+      }
+    </div>
   </div>
 </section>
 

@@ -5,6 +5,8 @@ export const PROJECTS = [
     year: 2022,
     image: "/public/images/projects/portfolio-angular.png",
     type: "Horizontal",
+    description:
+      "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ export const PROJECTS = [
     year: 2024,
     image: "/public/images/projects/mab.jpg",
     type: "Reel",
+    description:
+      "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
   },
 
   {
@@ -20,5 +24,7 @@ export const PROJECTS = [
     year: 2024,
     image: "/public/images/projects/portfolio-angular.png",
     type: "Horizontal",
+    description:
+      "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
   },
 ];
