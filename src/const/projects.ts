@@ -10,12 +10,12 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    name: "Video Navideño para muestra",
-    year: 2024,
+    name: "Reel presentación de fiesta",
+    year: 2025,
     image: "/public/images/projects/mab.jpg",
     type: "Reel",
     description:
-      "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
+      "Reel diseñado para presentar una variedad de productos navideños a través de planos cercanos, colores cálidos y un ritmo visual que acompaña el espíritu de las fiestas.",
   },
 
   {

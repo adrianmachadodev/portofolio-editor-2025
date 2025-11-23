@@ -15,7 +15,7 @@ const reels = PROJECTS.filter((project: any) => project.type == "Reel");
   <div class="w-7xl h-auto flex flex-col justify-start items-center gap-3 mt-2">
     <!-- Title -->
     <div class="w-3xl h-10 text-white font-[Helvetica-light]">
-      <h2>Proyectos</h2>
+      <h2 class="font-[Helvetica-Neue]">Proyectos</h2>
     </div>
     <!-- Content/text -->
     <div class="w-3xl h-auto text-white font-[Helvetica-light]">
@@ -33,10 +33,12 @@ const reels = PROJECTS.filter((project: any) => project.type == "Reel");
       {
         horizontalArray.map((item: any) => (
           <Card
+            id={item.id}
             name={item.name}
             image={item.image}
             year={item.year}
             type={item.type}
+            description={item.description}
           />
         ))
       }
@@ -50,10 +52,12 @@ const reels = PROJECTS.filter((project: any) => project.type == "Reel");
       {
         reels.map((item: any) => (
           <Card
+            id={item.id}
             name={item.name}
             image={item.image}
             year={item.year}
             type={item.type}
+            description={item.description}
           />
         ))
       }

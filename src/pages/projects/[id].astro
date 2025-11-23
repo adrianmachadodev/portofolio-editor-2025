@@ -1,0 +1,22 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import { PROJECTS } from "../../const/projects";
+
+export const getStaticPaths = () => {
+  return PROJECTS.map((res: any) => ({
+    params: { id: res.id },
+  }));
+};
+
+const { id } = Astro.params;
+
+const contentVideos = PROJECTS.find((video: any) => video.id == id);
+console.log(contentVideos);
+---
+
+<Layout>
+  <div class="w-full h-screen bg-red-500 flex flex-row justify-center">
+    <section class="w-3xl h-auto bg-yellow-500"></section>
+  </div>
+</Layout>
