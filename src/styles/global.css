@@ -18,7 +18,12 @@
 
 @font-face {
   font-family: "Bilmond";
-  src: url(../assets/fonts/bilmond-extrabold.otf);
+  src: url(fonts/bilmond-extrabold.otf);
+}
+
+@font-face {
+  font-family: "Sauce";
+  src: url(fonts/OpenSauceOne-Black.woff2);
 }
 
 body {
@@ -26,6 +31,10 @@ body {
   background-color: #121212;
   font-size: 14px;
 }
+
+/* body::-webkit-scrollbar {
+  display: none; 
+} */
 
 @layer base {
   h1 {

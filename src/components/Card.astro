@@ -28,11 +28,11 @@ const { name, year, image, type, description, id } = Astro.props;
 
   <!-- Text header -->
   <div
-    class="w-full h-10 bg-neutral-800/85 absolute group-hover:h-full transition-all ease-in-out 1ms bottom-0 rounded overflow-hidden text-white"
+    class="w-full h-10 bg-white opacity-50 absolute group-hover:h-full group-hover:opacity-100 transition-all ease-in-out 1ms bottom-0 rounded overflow-hidden text-black"
   >
-    <h3 class="font-[Helvetica-Neue] text-[18px] text-center text-balance">
+    <span class="font-[Sauce] text-[18px] text-center text-balance  border-b-neutral-900">
       {name}
-    </h3>
+    </span>
 
     <div
       class="w-full h-auto opacity-0 flex flex-row group-hover:block group-hover:opacity-100 transition-all ease-in 2s p-3 text-balance"
