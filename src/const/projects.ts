@@ -12,7 +12,7 @@ export const PROJECTS = [
     id: 2,
     name: "Reel presentación de fiesta",
     year: 2025,
-    image: "/public/images/projects/mab.jpg",
+    image: "/public/images/projects/final-reel-mab.jpg",
     type: "Reel",
     description:
       "Reel diseñado para presentar una variedad de productos navideños a través de planos cercanos, colores cálidos y un ritmo visual que acompaña el espíritu de las fiestas.",
