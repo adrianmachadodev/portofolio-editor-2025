@@ -11,8 +11,8 @@ interface Props {
 const { name, year, image, type, description, id } = Astro.props;
 ---
 
-<div class="w-auto h-auto flex relative group">
-  <picture class="w-auto h-auto">
+<div class="w-auto h-auto flex relative group shadow-lg/30 shadow-neutral-700">
+  <picture class="w-auto h-auto group-hover:opacity-20">
     {
       type == "Horizontal" ? (
         <img src={image} alt="projects-img" class="w-96 h-52 rounded" />
@@ -28,7 +28,7 @@ const { name, year, image, type, description, id } = Astro.props;
 
   <!-- Text header -->
   <div
-    class="w-full h-10 bg-white opacity-50 absolute group-hover:h-40 group-hover:opacity-100 transition-all ease-in-out 1ms bottom-0 rounded overflow-hidden text-black"
+    class="w-full h-10  absolute group-hover:h-40  transition-all ease-in-out 1ms bottom-0 rounded overflow-hidden text-white p-5"
   >
     <span class="font-[Sauce] text-[18px] text-center text-balance  border-b-neutral-900">
       {name}
@@ -37,16 +37,13 @@ const { name, year, image, type, description, id } = Astro.props;
     <div
       class="w-full h-auto opacity-0 flex flex-row group-hover:block group-hover:opacity-100 transition-all ease-in 2s p-3 text-balance"
     >
-      <p class="mb-4">
-        {description}
-      </p>
 
       <div
         class="flex flex-row w-full h-20 items-center justify-center text-center"
       >
         <a
           href={`projects/${id}`}
-          class="bg-neutral-500 w-20 h-10 p-2 rounded-full hover:bg-neutral-700"
+          class="flex bg-neutral-700 opacity-100 rounded-full p-2 w-50 h-10 justify-center items-center"
           >Ver más</a
         >
       </div>
