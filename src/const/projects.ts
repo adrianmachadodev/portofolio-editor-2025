@@ -5,6 +5,7 @@ export const PROJECTS = [
     year: 2022,
     image: "/public/images/projects/portfolio-angular.png",
     type: "Horizontal",
+    url: "https://www.youtube.com/embed/MI6a6TBJGUE?si=nPFzH3sgOy2iTLI_",
     description:
       "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
   },

@@ -1,7 +1,18 @@
 ---
+interface Props {
+  url: any;
+}
 
+const { url } = Astro.props;
 ---
 
-<section class="w-full h-[500px] bg-red-400">
-
+<section class="w-full h-auto">
+  <iframe
+    class="w-full aspect-video rounded-xl"
+    src={url}
+    title="Showreel"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+    ></iframe>
 </section>
