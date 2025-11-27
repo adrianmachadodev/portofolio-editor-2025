@@ -11,15 +11,17 @@ const { icon, title, description } = Astro.props;
 <article
   class="w-80 h-50 bg-neutral-800 inset-ring inset-ring-gray-400/20 rounded-xl p-5 text-white flex flex-col justify-center gap-2"
 >
-  <div
-    class="w-10 h-10 rounded-full bg-neutral-600 flex justify-center items-center"
-  >
-    <div set:html={icon} />
-  </div>
-  <div class="w-auto h-auto rouded-full font-[Helvetica-Neue]">
-    <h2 class="text-[16px]">{title}</h2>
-  </div>
-  <div class="w-auto h-auto rouded-full text-neutral-500">
-    {description}
+  <div class="w-full h-auto flex flex-col justify-center gap-2">
+    <div
+      class="w-10 h-10 rounded-full bg-neutral-600 flex justify-center items-center"
+    >
+      <div set:html={icon} />
+    </div>
+    <div class="w-auto h-auto rouded-full font-[Helvetica-Neue]">
+      <h2 class="text-[16px]">{title}</h2>
+    </div>
+    <div class="w-auto h-auto rouded-full text-neutral-500">
+      {description}
+    </div>
   </div>
 </article>

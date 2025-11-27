@@ -1,6 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { PROJECTS } from "../../const/projects";
+import ContentVideo from "../../components/ContentVideo.astro";
+import ContentDescription from "../../components/ContentDescription.astro";
 
 export const getStaticPaths = () => {
   return PROJECTS.map((res: any) => ({
@@ -16,9 +18,13 @@ console.log(contentVideos);
 
 <Layout>
   <div class="w-full h-screen bg-red-500 flex flex-row justify-center">
-    <section class="w-6xl h-auto bg-yellow-500">
+    <section class="w-6xl h-auto bg-yellow-500 flex flex-col">
       <!-- Section video -->
-      <div class="w-full h-96 bg-orange-500"></div>
+      <ContentVideo></ContentVideo>
+
+      <!-- Description -->
+       <ContentDescription></ContentDescription>
+      <!-- Destails -->
     </section>
   </div>
 </Layout>
