@@ -1,7 +1,15 @@
 ---
+interface Props {
+    title?:string,
+    year?:number,
+    description?:string,
+}
 
+const {title, year, description} = Astro.props;
 ---
 
-<section class="w-full h-[500px] bg-purple-400">
-
+<section class="w-full h-[500px] bg-purple-400 text-white">
+    <h2>{title}</h2>
+    <h2>{year}</h2>
+    <h2>{description}</h2>
 </section>
