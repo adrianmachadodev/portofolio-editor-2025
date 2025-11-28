@@ -17,13 +17,13 @@ console.log(contentVideos);
 ---
 
 <Layout>
-  <div class="w-full h-screen bg-red-500 flex flex-row justify-center">
+  <div class="w-full h-screen  flex flex-row justify-center">
     <section class="w-6xl h-auto  flex flex-col">
       <!-- Section video -->
       <ContentVideo url={contentVideos?.url}></ContentVideo>
 
       <!-- Description -->
-       <ContentDescription year={contentVideos?.year} description={contentVideos?.name} title={contentVideos?.description}></ContentDescription>
+       <ContentDescription year={contentVideos?.year} description={contentVideos?.description} title={contentVideos?.name}></ContentDescription>
       <!-- Destails -->
     </section>
   </div>

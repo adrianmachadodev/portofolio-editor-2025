@@ -1,9 +1,27 @@
 <section class="bg-[#151515] mt-2">
-    <div class="flex flex-row w-auto h-60  text-center justify-center items-center">
-        <marquee behavior="scroll" direction="left" scrollamount="6" loop >
-            <p class="text-7xl font-[Helvetica Light] uppercase text-white">
-                Creatividad · Inspiración · Movimiento · Historia · Emoción
-            </p>
-        </marquee>
-    </div>
+  <div class="overflow-hidden whitespace-nowrap w-full">
+  <div class="flex animate-marquee">
+    <span class="text-7xl font-[Helvetica Light] uppercase text-white pr-16">
+      Creatividad · Inspiración · Movimiento · Historia · Emoción
+    </span>
+    <span class="text-7xl font-[Helvetica Light] uppercase text-white pr-16">
+      · Creatividad · Inspiración · Movimiento · Historia · Emoción
+    </span>
+  </div>
+</div>
 </section>
+
+<style>
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 9s linear infinite;
+  }
+</style>

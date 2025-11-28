@@ -8,8 +8,16 @@ interface Props {
 const {title, year, description} = Astro.props;
 ---
 
-<section class="w-full h-[500px] bg-purple-400 text-white">
-    <h2>{title}</h2>
-    <h2>{year}</h2>
-    <h2>{description}</h2>
+<section class="w-full h-[500px]  text-white">
+    <div class="flex flex-row flex-wrap w-full h-auto ">
+        <!-- divider -->
+         <div class="w-50 h-3 "></div>
+
+         <div class="w-full h-50 ">
+            <h1>{title}</h1>
+            <p class="text-neutral-500">
+                {description}
+            </p>
+         </div>
+    </div>
 </section>
