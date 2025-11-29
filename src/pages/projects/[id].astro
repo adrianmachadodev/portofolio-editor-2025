@@ -17,13 +17,14 @@ console.log(contentVideos);
 ---
 
 <Layout>
-  <div class="w-full h-screen  flex flex-row justify-center">
-    <section class="w-6xl h-auto  flex flex-col">
+  <div class="w-full h-screen flex flex-row justify-center ">
+    <section class="w-6xl h-auto mt-32 flex flex-col">
+      <a href="/" class="text-white w-30 p-2  text-center rounded-full inset-ring inset-ring-neutral-500 mb-2">Volver al Inicio</a>
       <!-- Section video -->
       <ContentVideo url={contentVideos?.url}></ContentVideo>
 
       <!-- Description -->
-       <ContentDescription year={contentVideos?.year} description={contentVideos?.description} title={contentVideos?.name}></ContentDescription>
+       <ContentDescription year={contentVideos?.year} description={contentVideos?.description} title={contentVideos?.name} software={contentVideos?.software}></ContentDescription>
       <!-- Destails -->
     </section>
   </div>
