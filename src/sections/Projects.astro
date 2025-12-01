@@ -10,44 +10,43 @@ const reels = PROJECTS.filter((project: any) => project.type == "Reel");
 
 <section
   id="projects"
-  class="bg-[#151515] w-full min-h-[50vh] mt-2 flex flex-row justify-center p-3"
+  class="bg-[#151515] w-full min-h-[50vh] mt-2 flex justify-center p-3"
 >
-  <div class="w-7xl h-auto flex flex-col justify-start items-center gap-3 mt-2">
+  <div class="w-full max-w-7xl h-auto flex flex-col justify-start items-center gap-3 mt-2">
     <!-- Title -->
-    <div class="w-3xl h-10 text-white font-[Helvetica-light]">
+    <div class="w-full max-w-3xl text-white font-[Helvetica-light]">
       <h2 class="font-[Sauce]">Proyectos</h2>
     </div>
+
     <!-- Content/text -->
-    <div class="w-3xl h-auto text-white font-[Helvetica-light]">
+    <div class="w-full max-w-3xl text-white font-[Helvetica-light]">
       <p class="text-2xl">
         Algunos proyectos realizados mayormente son para redes sociales. También
         para presentar un nuevo proyecto web que he creado.
       </p>
     </div>
 
-    <!-- Projects Horizontal (presentations, etc) -->
+    <!-- Projects Horizontal -->
     <h3 class="text-white font-[Sauce] uppercase">Videos Horizontales</h3>
-    <div
-      class="grid grid-col-3 md:grid-flow-col gap-1 w-full justify-center items-center"
-    >
-      {
-        horizontalArray.map((item: any) => (
-          <Card
-            id={item.id}
-            name={item.name}
-            image={item.image}
-            year={item.year}
-            type={item.type}
-            description={item.description}
-          />
-        ))
-      }
-    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-1 w-full place-items-center">
+  {
+    horizontalArray.map((item: any) => (
+      <Card
+        id={item.id}
+        name={item.name}
+        image={item.image}
+        year={item.year}
+        type={item.type}
+        description={item.description}
+      />
+    ))
+  }
+</div>
 
-    <!-- Projects Vertical (reels)-->
+    <!-- Projects Vertical (Reels) -->
     <h3 class="text-white font-[Sauce] uppercase">Reels</h3>
     <div
-      class="grid grid-row-3 h-auto md:grid-flow-col gap-1 w-full justify-center items-center"
+      class="grid grid-cols-1 md:grid-cols-1 gap-1 w-full place-items-center"
     >
       {
         reels.map((item: any) => (
@@ -65,9 +64,4 @@ const reels = PROJECTS.filter((project: any) => project.type == "Reel");
   </div>
 </section>
 
-<!-- 
-  Proyectos: 
-  - Video presentación de portfolio 2022
-  - Video de promoción nav
-  - Video Presentación Portfolio video editor 2025
--->
+

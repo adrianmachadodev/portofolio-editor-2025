@@ -3,7 +3,7 @@
   class="bg-[#151515] w-auto h-screen mt-2 flex flex-row justify-center items-center gap-2 relative"
 >
   <div
-    class="min-w-full h-screen absolute bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[50px_50px] mask-b-from-50% mask-t-from-50%"
+    class="w-full h-screen absolute bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[50px_50px] mask-b-from-50% mask-t-from-50%"
   >
   </div>
 
@@ -13,13 +13,13 @@
   >
   </div>
 
-  <div class="flex flex-col w-3xl h-7/12 justify-center items-center z-10">
+  <div class="flex flex-col w-full max-w-3xl h-auto justify-center items-center z-10 px-4">
     <span
       class="inline-flex items-center rounded-full bg-green-400/10 px-2 py-1 text-xs font-black text-green-400 inset-ring inset-ring-green-500/20 mb-4"
     >
       ⬤ OpenToWork</span
     >
-    <div class="flex flex-col text-6xl text-white">
+    <div class="flex flex-col text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
       <h4 class="font-[bilmond] text-flicker delay-1">EDITOR DE VIDEO</h4>
       <h4 class="font-[bilmond] text-flicker delay-2">EDITOR DE VIDEO</h4>
       <h4 class="font-[bilmond] text-flicker delay-3">EDITOR DE VIDEO</h4>
@@ -85,8 +85,8 @@
       </a> -->
     </div>
   </div>
-  <div class="flex flex-row w-3xl h-auto justify-center z-10">
-    <picture class="w-2xl h-auto bg-contain grayscale-100">
+  <div class="flex flex-row w-3xl  h-auto justify-center z-10">
+    <picture class="w-2xl h-auto  hidden bg-contain grayscale-100 md:block">
       <img
         src="/public/images/editor-video.png"
         class="w-3xl h-auto bg-cover"

@@ -1,5 +1,7 @@
-<header class="bg-[#151515] flex flex-row w-full justify-around h-24 fixed top-0 border-b border-b-neutral-800 z-20 backdrop-blur-lg ">
-  <div class="flex flex-row  w-80 justify-center items-center gap-2">
+<header
+  class="bg-[#151515] flex flex-row w-full justify-around h-24 fixed top-0 border-b border-b-neutral-800 z-20 backdrop-blur-lg items-center"
+>
+  <div class="flex flex-row w-80 justify-center items-center gap-2">
     <div class="flex flex-row w text-white">
       <a class="flex flex-row items-center gap-2" href="/">
         <div class="w-12 h-12 flex flex-row justify-center items-center">
@@ -10,12 +12,52 @@
     </div>
   </div>
 
-  <nav class="flex flex-row w-100 ">
-    <ul class="flex flex-row justify-center items-center text-white gap-2">
-      <li><a href="#" class="hover:text-neutral-600 hover:transition-all ease-in 2ms">Inicio</a></li>
-      <li><a href="#about" class="hover:text-neutral-600 hover:transition-all ease-in 2ms">Sobre Mi</a></li>
-      <li><a href="#projects" class="hover:text-neutral-600 hover:transition-all ease-in 2ms">Trabajos</a></li>
-      <li><a href="#skills" class="hover:text-neutral-600 hover:transition-all ease-in 2ms">Habilidades</a></li>
+  <nav class="hidden md:flex flex-row w-100">
+    <ul class="flex flex-row justify-center items-center text-white gap-2 ">
+      <li>
+        <a
+          href="#"
+          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
+          >Inicio</a>
+      </li>
+      <li>
+        <a
+          href="#about"
+          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
+          >Sobre Mi</a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
+          >Trabajos</a>
+      </li>
+      <li>
+        <a
+          href="#skills"
+          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
+          >Habilidades</a>
+      </li>
     </ul>
   </nav>
+
+  <div class="w-10 h-10  flex justify-center md:hidden items-center">
+    <label class="flex flex-col gap-2 w-8">
+      <input class="peer hidden" type="checkbox" />
+      <div
+        class="rounded-2xl h-[3px] w-1/2 bg-white duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
+      >
+      </div>
+      <div
+        class="rounded-2xl h-[3px] w-full bg-white duration-500 peer-checked:-rotate-45"
+      >
+      </div>
+      <div
+        class="rounded-2xl h-[3px] w-1/2 bg-white duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
+      >
+      </div>
+    </label>
+  </div>
+
+  
 </header>
