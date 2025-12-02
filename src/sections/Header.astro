@@ -12,52 +12,56 @@
     </div>
   </div>
 
-  <nav class="hidden md:flex flex-row w-100">
-    <ul class="flex flex-row justify-center items-center text-white gap-2 ">
-      <li>
-        <a
-          href="#"
-          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
-          >Inicio</a>
-      </li>
-      <li>
-        <a
-          href="#about"
-          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
-          >Sobre Mi</a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
-          >Trabajos</a>
-      </li>
-      <li>
-        <a
-          href="#skills"
-          class="hover:text-neutral-600 hover:transition-all ease-in 2ms"
-          >Habilidades</a>
-      </li>
-    </ul>
-  </nav>
 
-  <div class="w-10 h-10  flex justify-center md:hidden items-center">
-    <label class="flex flex-col gap-2 w-8">
-      <input class="peer hidden" type="checkbox" />
-      <div
-        class="rounded-2xl h-[3px] w-1/2 bg-white duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
-      >
-      </div>
-      <div
-        class="rounded-2xl h-[3px] w-full bg-white duration-500 peer-checked:-rotate-45"
-      >
-      </div>
-      <div
-        class="rounded-2xl h-[3px] w-1/2 bg-white duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
-      >
+
+    <nav class="hidden md:flex flex-row w-96 ">
+      <ul class="flex flex-row justify-center items-center text-white gap-4">
+        <li><a href="#" class="hover:text-neutral-600">Inicio</a></li>
+        <li><a href="#about" class="hover:text-neutral-600">Sobre Mi</a></li>
+        <li><a href="#projects" class="hover:text-neutral-600">Trabajos</a></li>
+        <li>
+          <a href="#skills" class="hover:text-neutral-600">Habilidades</a>
+        </li>
+      </ul>
+    </nav>
+
+    <label
+      class="w-10 h-10 flex justify-center md:hidden items-center cursor-pointer z-20"
+    >
+      <div class="flex flex-col gap-2 w-8">
+        <input id="menu-toggle" type="checkbox" class="peer hidden" />
+        <div
+          class="line1 rounded-2xl h-[3px] w-1/2 bg-white duration-500
+        peer-checked:rotate-[225deg] origin-right
+        peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
+        >
+        </div>
+
+        <div
+          class="line2 rounded-2xl h-[3px] w-full bg-white duration-500
+        peer-checked:-rotate-45"
+        >
+        </div>
+
+        <div
+          class="line3 rounded-2xl h-[3px] w-1/2 bg-white duration-500 place-self-end
+        peer-checked:rotate-[225deg] origin-left
+        peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
+        >
+        </div>
       </div>
     </label>
-  </div>
 
-  
+    <nav
+      class="absolute top-20 w-full bg-[#151515]
+       text-white
+    flex-col items-center gap-4 py-4
+    hidden peer-checked:flex md:hidden"
+    >
+      <a href="#" class="block py-1 hover:text-neutral-400">Inicio</a>
+      <a href="#about" class="block py-1 hover:text-neutral-400">Sobre Mi</a>
+      <a href="#projects" class="block py-1 hover:text-neutral-400">Trabajos</a>
+      <a href="#skills" class="block py-1 hover:text-neutral-400">Habilidades</a
+      >
+    </nav>
 </header>
