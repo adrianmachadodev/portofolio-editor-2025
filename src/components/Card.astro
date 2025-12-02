@@ -12,19 +12,22 @@ const { name, year, image, type, description, id } = Astro.props;
 ---
 
 <div class="w-auto h-auto flex relative group shadow-lg/30 shadow-neutral-700">
-  <picture class="w-auto h-auto group-hover:opacity-20">
-    {
-      type == "Horizontal" ? (
-        <img src={image} alt="projects-img" class="w-96 h-52 rounded" />
-      ) : (
-        <img
+  <a href={`projects/${id}`}>
+
+    <picture class="w-auto h-auto group-hover:opacity-20">
+      {
+        type == "Horizontal" ? (
+          <img src={image} alt="projects-img" class="w-96 h-52 rounded" />
+        ) : (
+          <img
           src={image}
           alt="projects-img"
           class="w-full max-w-[200px] h-auto aspect-9/16 object-cover rounded items-center"
-        />
-      )
-    }
+          />
+        )
+      }
   </picture>
+</a>
 
   <!-- Text header hover -->
   <div

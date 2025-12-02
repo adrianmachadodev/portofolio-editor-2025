@@ -29,7 +29,8 @@ export const PROJECTS = [
     software:'Premiere Pro',
     image: "/public/images/projects/portfolio-angular.png",
     type: "Horizontal",
+    url: "https://www.youtube.com/embed/DrSUzz_cYFc?si=i7S38ffFMENp3_Tf",
     description:
-      "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
+      "Proyecto de presentación del portfolio como editor de video en 2025. Este showreel fue creado con Premiere Pro, he utilizado transiciones, flickers y mucho más para una experiencia fluida",
   },
 ];
