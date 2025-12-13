@@ -5,7 +5,7 @@ export const PROJECTS = [
     year: 2022,
     image: "images/projects/portfolio-angular.png",
     type: "Horizontal",
-    software:'Premiere Pro',
+    software: "Premiere Pro",
     url: "https://www.youtube.com/embed/MI6a6TBJGUE?si=nPFzH3sgOy2iTLI_",
     description:
       "Proyecto de presentación del portfolio como desarrollador que realicé en 2022. He utilizado iconos relacionados a las distintas tecnologías que utilizo.",
@@ -16,20 +16,41 @@ export const PROJECTS = [
     year: 2025,
     image: "images/projects/final-reel-mab.jpg",
     type: "Reel",
-    software:'Premiere Pro',
+    software: "Premiere Pro",
     url: "https://youtube.com/embed/R5DMIMml7FI?si=VyO96PlXbG2scn8s",
     description:
       "Reel diseñado para presentar una variedad de productos navideños a través de planos cercanos, colores cálidos y un ritmo visual que acompaña el espíritu de las fiestas.",
   },
-
   {
     id: 3,
     name: "Presentación Portfolio 2025 (Editor de Video)",
-    year: 2024,
-    software:'Premiere Pro',
-    image: "images/projects/portfolio-angular.png",
+    year: 2025,
+    software: "Premiere Pro",
+    image: "images/projects/showreel-2025.png",
     type: "Horizontal",
     url: "https://www.youtube.com/embed/DrSUzz_cYFc?si=i7S38ffFMENp3_Tf",
+    description:
+      "Proyecto de presentación del portfolio como editor de video en 2025. Este showreel fue creado con Premiere Pro, he utilizado transiciones, flickers y mucho más para una experiencia fluida",
+  },
+  {
+    id: 4,
+    name: "Reel presentación",
+    year: 2025,
+    software: "Premiere Pro",
+    image: "images/projects/portfolio-publi-2.png",
+    type: "Reel",
+    url: "https://www.youtube.com/embed/96iu6Gt_ESc?si=0V-Fa4Vxdo5sX-H1",
+    description:
+      "Proyecto de presentación del portfolio como editor de video en 2025. Este showreel fue creado con Premiere Pro, he utilizado transiciones, flickers y mucho más para una experiencia fluida",
+  },
+  {
+    id: 5,
+    name: "Reel presentación",
+    year: 2025,
+    software: "Premiere Pro",
+    image: "images/projects/portfolio-reel-2022.png",
+    type: "Reel",
+    url: "https://www.youtube.com/embed/QthdHiYpJF8?si=r9iVmfqbUT2UGekZ",
     description:
       "Proyecto de presentación del portfolio como editor de video en 2025. Este showreel fue creado con Premiere Pro, he utilizado transiciones, flickers y mucho más para una experiencia fluida",
   },

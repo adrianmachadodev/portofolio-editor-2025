@@ -3,17 +3,17 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url(../public/fonts/Helvetica.ttf) format(otf);
+  src: url(fonts/Helvetica.ttf) format(otf);
 }
 
 @font-face {
   font-family: "Helvetica-Light";
-  src: url(/public/fonts/Helvetica-Neue-UltraLight.otf);
+  src: url(fonts/Helvetica-Neue-UltraLight.otf);
 }
 
 @font-face {
   font-family: "Helvetica-Neue";
-  src: url(/public/fonts/HelveticaNeueLight.otf);
+  src: url(fonts/HelveticaNeueLight.otf);
 }
 
 @font-face {

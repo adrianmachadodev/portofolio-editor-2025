@@ -9,48 +9,30 @@ interface Props {
 }
 
 const { name, year, image, type, description, id } = Astro.props;
+
+const sizeCardImage =
+  type == "Horizontal" ? "col-span- row-span 2" : "col-span-1 row-span-2";
 ---
 
-<div class="w-auto h-auto flex relative group shadow-lg/30 shadow-neutral-700">
+<!-- card videos and reels -->
+<div
+  class={`relative overflow-hidden rounded-[10px] ${sizeCardImage} shadow-md/5 shadow-white mb-4`}
+>
   <a href={`projects/${id}`}>
-
-    <picture class="w-auto h-auto group-hover:opacity-20">
-      {
-        type == "Horizontal" ? (
-          <img src={image} alt="projects-img" class="w-96 h-52 rounded" />
-        ) : (
-          <img
-          src={image}
-          alt="projects-img"
-          class="w-full max-w-[200px] h-auto aspect-9/16 object-cover rounded items-center"
-          />
-        )
-      }
-  </picture>
-</a>
-
-  <!-- Text header hover -->
-  <div
-    class="w-full h-20 absolute group-hover:h-full transition-all ease-in 1ms  bottom-0 rounded overflow-hidden text-white p-5"
-  >
-    <span
-      class="font-[Sauce] text-[18px] text-center text-balance border-b-neutral-900 uppercase"
-    >
-      {name}
-    </span>
+    <picture class="object-contain">
+      <img src={image} alt="videos_edits" class="w-full h-full object-cover" />
+    </picture>
 
     <div
-      class="w-full h-auto opacity-0 flex flex-row group-hover:block group-hover:opacity-100 transition-all ease-in 2s p-3 text-balance"
+      class="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition"
     >
-      <div
-        class="flex flex-row w-full h-20 items-center justify-center text-center"
-      >
-        <a
-          href={`projects/${id}`}
-          class="flex bg-neutral-700 opacity-100 rounded-full p-2 w-50 h-10 justify-center items-center hover:bg-neutral-400 transition-all ease-in 1s"
-          >Ver más</a
+      <div class="absolute bottom-4 left-4 text-white">
+        <span
+          class="nline-flex items-center rounded-full bg-neutral-200/10 px-2 py-1 text-xs font-black text-white inset-ring inset-ring-neutral-200"
+          >{year}</span
         >
+        <p class="font-semibold mt-2">{name}</p>
       </div>
     </div>
-  </div>
+  </a>
 </div>
