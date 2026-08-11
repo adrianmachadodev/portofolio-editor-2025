@@ -1,30 +1,116 @@
 <header
-  class="bg-[#151515] flex flex-row w-full justify-around h-24 fixed top-0 border-b border-b-neutral-800 z-20 backdrop-blur-lg items-center"
+  class="bg-[#141111] fixed w-full flex flex-row items-center justify-around h-16 border-b border-b-neutral-800 z-20 md:min-w-3xl"
 >
-  <div class="flex flex-row w-80 justify-center items-center gap-2">
+  <div class="flex flex-row w-auto justify-center items-center gap-2">
     <div class="flex flex-row w text-white">
-      <a class="flex flex-row items-center gap-2" href="/">
-        <div class="w-12 h-12 flex flex-row justify-center items-center">
-          <img src="/logo/logo-adrian.png" alt="logo-header" />
-        </div>
-        Adrian Machado
+      <a href="/">
+        <img
+          src="/logo/logo-adrian.png"
+          alt="logo brand adrian machado"
+          width="50"
+        />
       </a>
     </div>
   </div>
 
-  <nav class="hidden md:flex flex-row w-96">
-    <ul class="flex flex-row justify-center items-center text-white gap-4">
-      <li><a href="#" class="hover:text-neutral-600">Inicio</a></li>
-      <li><a href="#about" class="hover:text-neutral-600">Sobre Mi</a></li>
-      <li><a href="#projects" class="hover:text-neutral-600">Trabajos</a></li>
+  <nav class="hidden lg:flex flex-row w-auto items-center justify-center">
+    <ul
+      class="flex flex-row min-w-auto grow justify-center items-center text-white gap-4"
+    >
       <li>
-        <a href="#skills" class="hover:text-neutral-600">Habilidades</a>
+        <a
+          href="#hero"
+          class="group relative block w-fit p-2 text-center"
+          aria-current="page"
+        >
+          Home
+
+          <span
+          aria-hidden="true"
+            class="absolute bottom-0 left-2 right-2 h-px
+           origin-bottom scale-y-0
+           bg-white
+           transition-transform duration-300
+           group-hover:scale-y-100"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a href="#aboutme" class="group relative block w-fit p-2 text-center">
+          About Me
+
+          <span
+            class="absolute bottom-0 left-2 right-2 h-px
+           origin-bottom scale-y-0
+           bg-white
+           transition-transform duration-300
+           group-hover:scale-y-100"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#experience"
+          class="group relative block w-fit p-2 text-center"
+        >
+          Experience
+
+          <span
+            class="absolute bottom-0 left-2 right-2 h-px
+           origin-bottom scale-y-0
+           bg-white
+           transition-transform duration-300
+           group-hover:scale-y-100"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a href="#work" class="group relative block w-fit p-2 text-center">
+          Featured Work
+
+          <span
+            class="absolute bottom-0 left-2 right-2 h-px
+           origin-bottom scale-y-0
+           bg-white
+           transition-transform duration-300
+           group-hover:scale-y-100"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="group relative block w-fit p-2 text-center">
+          Skills
+
+          <span
+            class="absolute bottom-0 left-2 right-2 h-px
+           origin-bottom scale-y-0
+           bg-white
+           transition-transform duration-300
+           group-hover:scale-y-100"
+          ></span>
+        </a>
       </li>
     </ul>
   </nav>
 
+  <a
+    href="resume/adrianmachado_resume.pdf"
+    class="hidden md:flex"
+    target="_blank"
+    rel="noopener"
+  >
+    <button
+      class="ring-1 ring-neutral-200 p-2 rounded-full backdrop-blur-lg border border-white/10 bg-linear-to-tr from-black/60 to-black/40 shadow-lg hover:scale-97 hover:rotate-0 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:from-white/10 hover:to-black/40 group relative overflow-hidden w-24 h-10 items-center justify-center text-white text-center"
+      ><div
+        class="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"
+      >
+      </div>
+      Resume
+    </button>
+  </a>
+
   <label
-    class="w-10 h-10 flex justify-center md:hidden items-center cursor-pointer z-20"
+    class="w-10 h-10 flex justify-center lg:hidden items-center cursor-pointer z-20"
   >
     <div class="flex flex-col gap-2 w-8">
       <input id="menu-toggle" type="checkbox" class="peer hidden" />
@@ -52,28 +138,43 @@
 
   <nav
     id="navbar"
-    class="absolute top-20 w-full bg-[#151515]
+    class="absolute top-15 w-full bg-[#151515]
        text-white
-    flex-col items-center gap-4 py-4
+    flex-col items-center gap-9 py-4
     hidden peer-checked:flex md:hidden closed-menu z-10 text-center text-4xl"
   >
-    <a href="#" class="block py-1 hover:text-neutral-400 link-item">Inicio</a>
-    <a href="#about" class="block py-1 hover:text-neutral-400 link-item"
-      >Sobre Mi</a
+    <a href="#hero" class="block py-1 hover:text-neutral-400 link-item">Home</a>
+    <a href="#aboutme" class="block py-1 hover:text-neutral-400 link-item"
+      >About me</a
     >
-    <a href="#projects" class="block py-1 hover:text-neutral-400 link-item"
-      >Trabajos</a
+    <a href="#experience" class="block py-1 hover:text-neutral-400 link-item"
+      >Experience</a
     >
+    <a href="#work" class="block py-1 hover:text-neutral-400 link-item"
+      >Feature Work</a
+    >
+
     <a href="#skills" class="block py-1 hover:text-neutral-400 link-item"
-      >Habilidades</a
+      >Skills</a
     >
+
+    <a href="resume/adrianmachado_resume.pdf" target="_blank" rel="noopener">
+      <button
+        class="ring-1 text-[20px] ring-neutral-200 p-2 rounded-full backdrop-blur-lg border border-white/10 bg-linear-to-tr from-black/60 to-black/40 shadow-lg hover:scale-97 hover:rotate-0 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:from-white/10 hover:to-black/40 group relative overflow-hidden w-40 h-10 items-center justify-center text-white text-center"
+        ><div
+          class="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"
+        >
+        </div>
+        Resume
+      </button>
+    </a>
   </nav>
 </header>
 
 <style>
   .open-menu {
     display: block;
-    height: 300px;
+    height: 100vh;
     overflow: hidden;
     transition: all ease 1s;
   }
@@ -85,17 +186,21 @@
 <script>
   const hamburguerMenu = document.getElementById("menu-toggle");
   const navbar = document.getElementById("navbar");
-  const links = navbar?.querySelectorAll("link-item");
+  const links = navbar?.querySelectorAll(".link-item");
 
   hamburguerMenu?.addEventListener("click", () => {
     navbar?.classList.toggle("open-menu");
     navbar?.classList.toggle("closed-menu");
+    document.body.style.overflow = hamburguerMenu.checked ? "hidden" : "";
   });
 
-  links?.forEach((link: any) => {
+  links?.forEach((link) => {
     link.addEventListener("click", () => {
+      hamburguerMenu.checked = false;
+      navbar?.classList.remove("open-menu");
       navbar?.classList.add("closed-menu");
-      if (hamburguerMenu) hamburguerMenu.checked = true;
+
+      document.body.style.overflow = "";
     });
   });
 </script>

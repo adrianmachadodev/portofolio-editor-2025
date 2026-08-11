@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { PROJECTS } from "../../const/projects";
+import ContentVideo from "../../components/ContentVideo.astro";
+import ContentDescription from "../../components/ContentDescription.astro";
+
+export const getStaticPaths = () => {
+  return PROJECTS.map((res: any) => ({
+    params: { id: res.id },
+  }));
+};
+
+const { id } = Astro.params;
+
+const contentVideos = PROJECTS.find((video: any) => video.id == id);
+console.log(contentVideos);
+---
+
+<Layout>
+  <section class="w-full max-w-5xl mx-auto mt-20 px-4">
+    <div
+      class="w-full min-h-screen flex flex-col items-center justify-center gap-6"
+    >
+      <div class="w-full flex flex-col gap-4">
+      <a
+        href="/projects"
+        class="p-2 rounded-full backdrop-blur-lg border border-white/10 bg-linear-to-tr from-black/60 to-black/40 shadow-lg hover:shadow-2xl hover:shadow-white/20 hover:scale-97 hover:rotate-0 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:from-white/10 hover:to-black/40 group relative overflow-hidden w-40 h-10 items-center justify-center text-white text-center"
+      >
+        <div
+          class="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"
+        >
+        </div>
+        Go back
+      </a>
+    </div>
+
+      <!-- Video -->
+      <ContentVideo path={contentVideos?.path} client:load/>
+
+      <!-- Description -->
+      <ContentDescription
+        year={contentVideos?.year}
+        description={contentVideos?.description}
+        title={contentVideos?.name}
+        software={contentVideos?.software}
+      />
+    </div>
+  </section>
+</Layout>

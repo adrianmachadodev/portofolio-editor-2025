@@ -1,0 +1,24 @@
+---
+import CardExperience from "../components/CardExperience.astro";
+import { EXPERIENCE } from "../const/experience";
+---
+
+<section
+  id="experience"
+  class="w-full scroll-mt-14 max-w-3xl min-h-[20vh] flex flex-col gap-2"
+  style="padding: 10px; margin-top: 10px;"
+>
+  <h2 class="text-2xl uppercase font-black text-white">Experience</h2>
+  <div class="grid grid-rows-3 gap-3">
+    {
+      EXPERIENCE.map((item) => (
+        <CardExperience
+          title={item.title}
+          description={item.description}
+          company={item.company}
+          date={item.date}
+        />
+      ))
+    }
+  </div>
+</section>

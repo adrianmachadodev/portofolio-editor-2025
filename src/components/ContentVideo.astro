@@ -1,18 +1,52 @@
 ---
 interface Props {
-  url: any;
+  path: any;
 }
 
-const { url } = Astro.props;
+const { path } = Astro.props;
+console.log("url", path);
 ---
 
 <section class="w-full h-auto">
-  <iframe
-    class="w-full aspect-video rounded-xl"
-    src={url}
-    title="Showreel"
-    loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-    ></iframe>
+  <video id="videoplayer" class="max-h-[70vh] max-w-full rounded-xl object-contain mx-auto" controls>
+    <source src={path} type="video/mp4" />
+  </video>
 </section>
+
+<style>
+  .shadow-video {
+    -webkit-box-shadow: 0px -1px 22px 0px #ffffff;
+    box-shadow: 0px -1px 22px 0px #383838;
+    animation: shadowfade 1s ease;
+  }
+
+  @keyframes shadowfade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+</style>
+
+<script>
+  function initVideo() {
+    const video = document.getElementById("videoplayer");
+
+    if (!(video instanceof HTMLVideoElement)) return;
+
+    video.volume = 0.4;
+
+    const addShadow = () => video.classList.add("shadow-video");
+    const removeShadow = () => video.classList.remove("shadow-video");
+
+    video.addEventListener("play", addShadow);
+    video.addEventListener("pause", removeShadow);
+    video.addEventListener("ended", removeShadow);
+  }
+
+  initVideo();
+  document.addEventListener("astro:page-load", initVideo);
+</script>

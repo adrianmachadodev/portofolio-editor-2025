@@ -1,22 +1,36 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Footer from "../sections/Footer.astro";
 import Header from "../sections/Header.astro";
 import "../styles/global.css";
+import Footer from "../sections/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image"
+      href="/logo/favicon/favicon-96x96.png"
+      sizes="26x26"
+    />
     <meta name="generator" content={Astro.generator} />
-    <title>Adrian Machado | Editor de video</title>
+    <meta
+      name="description"
+      content="Portfolio about Adrián Machado such as video editor short-form with premiere pro"
+    />
+    <title>Adrián Machado | Web N' Fx</title>
+    <ClientRouter />
   </head>
-  <body class="scroll-smooth">
+  <body class=" max-w-[5000px]">
     <Header />
-    <slot  />
+    <main class="mx-auto flex w-full flex-col gap-8 lg:flex-row">
+      <section class="w-full flex-1">
+        <slot />
+      </section>
+    </main>
     <Footer />
   </body>
 </html>

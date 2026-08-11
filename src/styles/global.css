@@ -1,49 +1,78 @@
 @import "tailwindcss";
 @import "tailwindcss/preflight.css" layer(base);
 
-@font-face {
-  font-family: "Helvetica";
-  src: url(fonts/Helvetica.ttf) format(otf);
+:root {
+  --primary: #0077b6;
+  /* --secondary: */
 }
 
 @font-face {
-  font-family: "Helvetica-Light";
-  src: url(fonts/Helvetica-Neue-UltraLight.otf);
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Helvetica-Neue";
-  src: url(fonts/HelveticaNeueLight.otf);
-}
+/* * {
 
-@font-face {
-  font-family: "Bilmond";
-  src: url(fonts/bilmond-extrabold.otf);
-}
-
-@font-face {
-  font-family: "Sauce";
-  src: url(fonts/OpenSauceOne-Black.woff2);
-}
-
-body {
-  font-family: "Helvetica";
-  background-color: #121212;
-  font-size: 14px;
-}
-
-/* body::-webkit-scrollbar {
-  display: none; 
+  box-sizing: border-box;
 } */
 
-@layer base {
-  h1 {
-    @apply text-4xl font-bold;
-  }
-  h2 {
-    @apply text-3xl font-semibold;
-  }
-  h3 {
-    @apply text-2xl font-medium;
-  }
+body {
+  font-family: "DMSans";
+  background-color: #141111;
+  font-display: swap;
+}
+
+/* s */
+
+.btn-rounded {
+  background: #d9d9d9;
+  background: linear-gradient(
+    0deg,
+    rgba(217, 217, 217, 1) 0%,
+    rgba(59, 59, 59, 1) 100%
+  );
+}
+
+/* .card-info {
+padding: 10px;
+background: #121212;
+background: linear-gradient(0deg, #121212, #565656);
+} */
+
+.border-card {
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background:
+    linear-gradient(#212529, #212529) padding-box,
+    linear-gradient(0deg, #475058 0%, #141111 40%) border-box;
+}
+
+.experience-time {
+  background: #3b3b3b;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 59, 59, 1) 0%,
+    rgba(130, 130, 130, 1) 100%
+  );
+}
+
+.glass-card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-effect{
+
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.4px);
+-webkit-backdrop-filter: blur(3.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }

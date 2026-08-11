@@ -1,10 +1,15 @@
 ---
-import Divider from "../components/Divider.astro";
+import CardDev from "../components/CardDev.astro";
 import Layout from "../layouts/Layout.astro";
 import AboutMe from "../sections/AboutMe.astro";
+import Experience from "../sections/Experience.astro";
 import Hero from "../sections/Hero.astro";
-import Projects from "../sections/Projects.astro";
 import Skills from "../sections/Skills.astro";
+import Together from "../sections/Together.astro";
+import Work from "../sections/Work.astro";
+import CardInstagram from "../components/CardInstagram.astro"
+import Footer from "../sections/Footer.astro";
+import FAQ from "../sections/FAQ.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -12,8 +17,24 @@ import Skills from "../sections/Skills.astro";
 
 <Layout>
   <Hero />
-  <Divider />
-  <AboutMe />
-  <Projects />
-  <Skills />
+
+  <section class="w-full flex flex-col md:flex-row justify-center gap-6 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Contenido principal -->
+    <div class="w-full max-w-3xl flex flex-col items-center gap-6">
+      <AboutMe />
+      <Experience />
+      <Work />
+      <Skills />
+      <Together />
+      <!-- <FAQ/> -->
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="w-full md:max-w-xs p-0 md:p-3 flex flex-col gap-6">
+      <CardDev />
+      <CardInstagram />
+    </aside>
+
+  </section>
 </Layout>

@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date: string;
+  description: string;
+
+}
+
+const {title, company, date, description } = Astro.props;
+---
+<article
+      class="w-full min-h-32 bg-radial-[at_50%_200%] from-[#343a40] to-neutral-900 to-80% p-3 rounded-[10px] border-b border-b-neutral-600"
+    >
+      <div class="w-full min-h-8 flex flex-col sm:flex-row sm:justify-center sm:items-center">
+        <div class="flex-3 mh-8 flex flex-col sm:justify-center">
+          <h3 class="font-black text-white text-2xl">{title}</h3>
+          <span class="font-medium text-[#adb5bd] text-[16px]">{company}</span>
+        </div>
+        <div class="w-full sm:w-auto flex justify-start sm:justify-end items-center mt-3">
+          <span
+            class="text-white ring ring-neutral-400 rounded-full  flex items-center p-4 text-[14px]"
+            style="height: 30px;">{date}</span
+          >
+        </div>
+        <!-- <div class=" h-8  flex flex-col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down text-white"><path d="m6 9 6 6 6-6"/></svg>
+        </div> -->
+      </div>
+      <div class="w-full min-h-8 text-[#B5B5C3] mt-3">
+        <p class="text-[14px]">
+          {description}
+        </p>
+      </div>
+    </article>

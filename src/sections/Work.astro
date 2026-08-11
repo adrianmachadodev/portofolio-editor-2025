@@ -1,0 +1,52 @@
+---
+import { nan } from "astro:schema";
+import CardProjects from "../components/CardProjects.astro";
+import { PROJECTS } from "../const/projects";
+import Projects from "../pages/projects.astro";
+
+const projectsFilter = PROJECTS.slice(0,3);
+---
+
+<section
+  id="work"
+  class="w-full max-w-3xl min-h-[20vh] flex flex-col gap-2 scroll-mt-14"
+  style="padding: 10px; margin-top: 10px;"
+>
+  <h2 class="text-2xl uppercase font-black text-white ">Featured Work</h2>
+
+  {
+    projectsFilter.map((item) => (
+      <CardProjects
+        id={item.id}
+        name={item.name}
+        year={item.year}
+        image={item.image}
+        type={item.type}
+        description={item.description}
+      />
+    ))
+  }
+
+  <div class="flex w-full justify-center items-center mt-5">
+    <a href=`/projects`>
+      <button
+          class="uppercase font-bold w-52 h-10 group rounded-3xl ring ring-neutral-400 text-white hover:shadow-md shadow-neutral-400 transition-all ease-out duration-500 cursor-pointer flex flex-row items-center justify-center gap-1"
+          >View Projects
+          <svg
+            class="group-hover:translate-x-1 rotate-2 ease-in duration-300"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </button>
+    </a>
+  </div>
+</section>
