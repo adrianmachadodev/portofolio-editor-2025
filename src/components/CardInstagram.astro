@@ -2,22 +2,60 @@
 
 ---
 <article class="w-full min-h-20 bg-radial-[at_20%_200%] from-[#343a40] to-neutral-900 to-70% flex flex-col md:flex-col items-center p-3 rounded-xl gap-5 outline outline-neutral-800">
-  <div class="w-10  h-10">
-   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+  <div class="w-20 h-20 outline outline-white rounded-full flex items-center justify-center p-2">
+    <img
+          src="/logo/logo-adrian.png"
+          alt="logo brand adrian machado"
+
+        />
     
   </div>
-  <h2 class="text-[20px] font-black text-white">Follow on Instagram</h2>
-  <div class="w-auto h-7 bg-green-400/15 ring ring-green-600 text-white rounded-2xl flex flex-row p-3 items-center gap-2">
-    <div class="w-2 h-2 bg-green-400 ring ring-green-800 rounded-full flex items-center">
-      <div class="w-2 h-2 absolute bg-green-400 rounded-full animate-ping"></div>
-    </div>
-    <span class="text-[13px]">Active Now</span>
+  <h2 class="text-[20px] font-black text-white">@adrian.webnfx</h2>
+  <div
+  class="w-auto h-7 bg-green-400/15 text-white rounded-2xl flex flex-row p-3 items-center gap-2 ring ring-green-800"
+  id="status"
+>
+  <div
+    id="status-dot"
+    class="w-2 h-2 bg-green-400 ring ring-green-800 rounded-full flex items-center"
+  >
+    <div
+      id="status-ping"
+      class="w-2 h-2 absolute bg-green-400 rounded-full animate-ping"
+    ></div>
   </div>
+
+  <span id="status-text" class="text-[13px]">Active Now</span>
+</div>
   <p class="text-[#B5B5C3]">
     I share my projects on Instagram, showcasing my creative work.
 
   </p>
-  <a class="bg-neutral-200 text-black p-2 w-auto h-9 rounded-full cursor-pointer flex items-center justify-center font-bold" href="https://www.instagram.com/adrian.webnfx/" target="_blank">
-      Visit Instagram 
+  <a class="bg-neutral-200 hover:bg-neutral-400 hover:text-white transition-all ease-in duration-300 text-black text-sm p-4 w-auto h-9 rounded-full cursor-pointer flex items-center justify-center font-bold uppercase" href="https://www.instagram.com/adrian.webnfx/" target="_blank">
+      Visit Instagram
   </a>
 </article>
+
+
+<script>
+  const status = document.getElementById("status");
+  const statusDot = document.getElementById("status-dot");
+  const statusPing = document.getElementById("status-ping");
+  const statusText = document.getElementById("status-text");
+
+  const hours = new Date().getHours();
+
+  if (hours >= 18) {
+    status?.classList.remove("bg-green-400/15");
+    status?.classList.remove('ring-green-800')
+    status?.classList.add("bg-neutral-400/15");
+    status?.classList.add("ring-neutral-500");
+
+    statusDot?.classList.remove("bg-green-400", "ring-green-800");
+    statusDot?.classList.add("bg-neutral-400", "ring-neutral-600");
+
+    statusPing?.classList.remove("animate-ping");
+
+    statusText.textContent = "Disconnected";
+  }
+</script>
