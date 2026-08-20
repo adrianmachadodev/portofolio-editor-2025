@@ -7,7 +7,7 @@ export const FAQ = [
   {
     question: "What is the price of the videos?",
     response:
-      "The price is $25 USD per video for international clients, or ARS $25,000 per video in Argentina.",
+      "Short-form video editing: $25 USD per video for international clients, or ARS $25,000 per video in Argentina. Long-form video creation: $40 USD per video for international clients, or ARS $40,000 per video in Argentina. ",
   },
   {
     question: "How long does it take to edit a video?",
