@@ -122,4 +122,16 @@ export const PROJECTS = [
     description:
       "This reel is a sample and explanation of how I made a video for a client, using the b-roll format with text animation.",
   },
+  {
+    id: 12,
+    name: "Reel UGC",
+    year: 2025,
+    software: ["CapCut", "Motion Graphics"],
+    image: "/images/projects/reel_demo.png",
+    type: "Reel",
+    path: "/videos/reel_demo.mp4",
+    status: 'New',
+    description:
+      "This is a demo roll for UGC content for social media, I created this video with CapCut",
+  },
 ];

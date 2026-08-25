@@ -6,13 +6,15 @@ interface Props {
   image: string;
   type: string;
   description: string;
+  status:string | undefined;
 }
 
-const { name, year, image, type, description, id } = Astro.props;
+const { name, year, image, type, description, id, status } = Astro.props;
+const statusNew = status == 'New' ? 'ring ring-green-400/60' : 'outline-1 outline-neutral-800'
 ---
 
 <article
-  class="w-full min-h-40 flex flex-col sm:flex-row flex-wrap rounded-[10px] justify-between gap-2 p-3  outline-1 outline-neutral-800 bg-linear-120 from-[#343a409a] to-neutral-900 to-80%"
+  class=`w-full min-h-40 flex flex-col sm:flex-row flex-wrap rounded-[10px] justify-between gap-2 p-3  ${statusNew} bg-linear-120 from-[#343a409a] to-neutral-900 to-80% `
 >
   <div class="flex flex-2 rounded overflow-hidden">
     <img
@@ -21,12 +23,18 @@ const { name, year, image, type, description, id } = Astro.props;
       alt="Reel Instagram Portfolio"
     />
   </div>
-  <div class="flex flex-3 flex-col gap-4">
-    <h3
-      class="text-lg font-black uppercase text-white border-b-[1.4px] border-neutral-700"
+  <div class="flex flex-3 flex-col gap-6">
+    <div class="flex flex-row w-full border-b-[1.4px] border-neutral-700 justify-between">
+      <h3
+      class="text-lg font-black uppercase text-white "
     >
       {name}
+
     </h3>
+
+    <span class="text-green-400 text-sm animate-pulse font-black uppercase">{status}</span>
+    </div>
+
     <p class="text-white font-normal">
       {description}
     </p>

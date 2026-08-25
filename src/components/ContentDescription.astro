@@ -4,9 +4,10 @@ interface Props {
   year?: number;
   description?: string;
   software?: Array<string>;
+  status?:string;
 }
 
-const { title, year, description, software } = Astro.props;
+const { title, year, description, software, status} = Astro.props;
 ---
 
 <section class="w-full min-h-auto text-white mb-16">
@@ -26,6 +27,9 @@ const { title, year, description, software } = Astro.props;
           </p>
         ))
       }
+      <span class="inline-flex items-center rounded-full bg-green-800/60 ring ring-green-500 px-5 py-2 text-xs uppercase font-black text-white inset-ring inset-ring-neutral-500/20 mt-4 mb-4 mr-2">
+        {status}
+      </span>
     </div>
   </div>
 </section>
