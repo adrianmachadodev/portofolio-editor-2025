@@ -22,6 +22,6 @@ export const FAQ = [
   {
     question: "What is you main software?",
     response:
-      "I use Adobe Premiere Pro.",
+      "I use Adobe Premiere Pro and CapCut",
   },
 ];
