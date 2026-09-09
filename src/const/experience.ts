@@ -7,8 +7,8 @@ export const EXPERIENCE = [
       "In this project, my role as a content creator for a vehicle agency network powered by artificial intelligence, creating videos and images with different tools, where these are published on TikTok, Instagram, and WhatsApp",
   },
   {
-    title: "Social Media Video Editor",
-    company: "Freelance",
+    title: "Video Editor - Short-Form & Long-Form",
+    company: "Web N' Fx - Personal Brand",
     date: "Nov. 2025 - Present",
     description:
       "Created and edited short-form vertical video content for Instagram Reels and TikTok, focused on audience retention and engagement. Applied dynamic cuts, transitions, motion graphics, audiovisual synchronization, color correction, and platform-specific optimization.",
