@@ -134,4 +134,16 @@ export const PROJECTS = [
     description:
       "This is a demo roll for UGC content for social media, I created this video with CapCut",
   },
+  {
+    id: 13,
+    name: "Reel Podcast",
+    year: 2025,
+    software: ["CapCut", "Motion Graphics"],
+    image: "/images/projects/podcast_chris_wills.png",
+    type: "Reel",
+    path: "/videos/podcast_chris_wills.mp4",
+    status: 'New',
+    description:
+      "This is a demo roll for UGC content for social media, I created this video with CapCut",
+  },
 ];
