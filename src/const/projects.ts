@@ -144,6 +144,6 @@ export const PROJECTS = [
     path: "/videos/podcast_chris_wills.mp4",
     status: 'New',
     description:
-      "This is a demo roll for UGC content for social media, I created this video with CapCut",
+      "This reel is from a part of a podcast, the edition was made with capcut",
   },
 ];
