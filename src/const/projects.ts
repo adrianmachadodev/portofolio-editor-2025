@@ -141,7 +141,7 @@ export const PROJECTS = [
     software: ["CapCut", "Motion Graphics"],
     image: "/images/projects/podcast_chris_wills.png",
     type: "Reel",
-    path: "/videos/podcast_chris_bryan.mp4",
+    path: "/videos/podcast_chris_will_bryan.mp4",
     status: 'New',
     description:
       "This reel is from a part of a podcast, the edition was made with capcut",
