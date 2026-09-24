@@ -139,7 +139,7 @@ export const PROJECTS = [
     name: "Reel Podcast",
     year: 2025,
     software: ["CapCut", "Motion Graphics"],
-    image: "/images/projects/podcast_chris_wills.png",
+    image: "/images/projects/podcast_chris_bryan.png",
     type: "Reel",
     path: "/videos/podcast_chris_wills.mp4",
     status: 'New',
