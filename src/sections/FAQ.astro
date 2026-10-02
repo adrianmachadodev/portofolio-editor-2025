@@ -39,7 +39,7 @@ import { FAQ } from "../const/faq";
         </summary>
         <div class="w-full grid grid-rows-[0fr] items-start mt-4 opacity-0 text-white transition-all duration-500 ease-in-out overflow-hidden group-open:grid-rows-[1fr] group-open:opacity-100">
           <div class="overflow-hidden">
-            <p class="text-justify">{item.response}</p>
+            <p class="text-justify" set:html={item.response}></p>
           </div>
         </div>
       </details>
