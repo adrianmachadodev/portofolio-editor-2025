@@ -2,7 +2,7 @@ export const FAQ = [
   {
     question: "How much experience working as a video editor?",
     response:
-      "I have 3 years of experience as a video editor. I worked for a client creating content for their YouTube channel between these years",
+      "I have +3 years of experience as a video editor. I worked for a client creating content for their YouTube channel between these years",
   },
   {
     question: "What is the price of the videos?",
