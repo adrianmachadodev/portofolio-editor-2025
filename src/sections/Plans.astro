@@ -4,8 +4,10 @@ import { PLANS } from "../const/plans";
 
 <section
   id="plans"
-  class="w-full sm:w-3xl min-h-auto p-6 group flex flex-col items-center gap-4 bg-[#161615] bg-radial-[at_100%_95%] from-[#343a40] to-[#141111] to-65% text-center justify-center outline outline-neutral-800 rounded"
+  class="w-full sm:w-3xl scroll-mt-24 min-h-auto p-6 group flex flex-col items-center gap-4 bg-[#161615] bg-radial-[at_100%_95%] from-[#343a40] to-[#141111] to-65% text-center justify-center outline outline-neutral-800 rounded"
 >
+
+  <h2 class="text-white text-2xl font-bold uppercase text-left">Plans</h2>
 
 {
     <div set:html={PLANS[0].response}></div>
